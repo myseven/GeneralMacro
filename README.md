@@ -1,8 +1,7 @@
 # GeneralMacro
 usefully macro in iOS
 
-////////////////////////////////////////////////////////////
-
+```
 #ifdef DEBUG
 #define DLog(...) NSLog(__VA_ARGS__)
 #define DFLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
@@ -109,7 +108,7 @@ dispatch_async(dispatch_get_main_queue(), block);\
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
-
+```
 
 
 
