@@ -1,5 +1,7 @@
 # GeneralMacro
 usefully macro in iOS
+#wating your code!
+
 
 ```
 #ifdef DEBUG
